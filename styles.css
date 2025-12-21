@@ -76,6 +76,38 @@ span {
   box-shadow: 0 12px 36px rgba(0, 0, 0, 0.18);
 }
 
+.dream-logo {
+  position: fixed;
+  top: 18px;
+  left: 18px;
+  z-index: 20;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(255, 240, 245, 0.9));
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+}
+
+.dream-logo img {
+  width: 82px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  background: #fffaf5;
+}
+
+.dream-logo span {
+  font-family: 'Playfair Display', 'Inter', serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--ink);
+  letter-spacing: 0.02em;
+}
+
 .book-shell {
   position: relative;
   width: 100vw;
@@ -523,6 +555,14 @@ button {
   .page {
     padding: 28px;
   }
+  .dream-logo {
+    top: 12px;
+    left: 12px;
+    padding: 8px 12px;
+  }
+  .dream-logo img {
+    width: 72px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -536,5 +576,14 @@ button {
   .indicator {
     gap: 4px;
     padding: 8px 10px;
+  }
+  .dream-logo {
+    top: 10px;
+    left: 10px;
+    gap: 8px;
+    padding: 8px 10px;
+  }
+  .dream-logo span {
+    font-size: 0.9rem;
   }
 }

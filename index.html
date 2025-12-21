@@ -8,10 +8,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <!-- Cache-busting version to éviter l'ancien site Dream en cache -->
-  <link rel="stylesheet" href="styles.css?v=2" />
+  <link rel="stylesheet" href="styles.css?v=3" />
 </head>
 <body>
   <button id="modeToggle" aria-label="Basculer mode">Mode nuit</button>
+  <div class="dream-logo" aria-label="Logo Dream Project">
+    <img src="https://via.placeholder.com/140x80?text=Dream+Logo" alt="Logo Dream Project (remplacer par le vrai logo)" />
+    <span>Dream Project</span>
+  </div>
   <div class="book-shell">
     <div class="book" id="book">
       <!-- Page 1 : Couverture -->
@@ -199,9 +203,10 @@
     <ul>
       <li>Avec une URL externe : remplace l’attribut <code>src</code> par ton lien (ex : <code>src="https://exemple.com/photo.jpg"</code>).</li>
       <li>Avec un fichier local : ajoute l’image dans un dossier <code>images/</code> puis utilise <code>src="images/nom-du-fichier.ext"</code>.</li>
+      <li>Le logo Dream Project en haut à gauche suit la même logique : remplace le <code>src</code> du logo avec ton visuel (URL ou <code>images/logo.png</code> par exemple).</li>
     </ul>
   </section>
 
-  <script src="script.js?v=2"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>
