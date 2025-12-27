@@ -1,1 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dream Project • Dreambox</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="logo" href="#accueil">
+        <!-- Remplacer par notre vrai logo -->
+        <img src="https://via.placeholder.com/140x80?text=Dream+Logo" alt="Logo Dream Project" />
+        <span>Dream Project</span>
+      </a>
+      <div class="nav-links">
+        <a href="#accueil">Accueil</a>
+        <a href="#dreambox">Dreambox</a>
+        <a href="#formations">Formations</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
 
+  <main>
+    <section id="accueil" class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Association Dream Project</p>
+        <h1>Développement personnel et missions humanitaires, réunis dans un même élan.</h1>
+        <p>
+          Dream Project accompagne les jeunes pour gagner en confiance, mieux gérer leurs émotions et oser passer à l’action,
+          tout en finançant des missions humanitaires à l’international.
+        </p>
+        <a class="btn primary" href="#dreambox">Découvrir la Dreambox</a>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <img src="https://via.placeholder.com/420x320" alt="Illustration Dream Project" />
+          <p>Un carnet de 30 jours pour révéler le potentiel des jeunes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="dreambox" class="section dreambox">
+      <div class="section-header">
+        <h2>La Dreambox</h2>
+        <p>30 jours, 30 cartes : 10 citations, 10 parcours inspirants, 10 challenges.</p>
+      </div>
+      <div class="dreambox-grid">
+        <div class="card">
+          <h3>10 citations</h3>
+          <p>Des mots-clés pour nourrir la motivation au quotidien (contenu confidentiel).</p>
+        </div>
+        <div class="card">
+          <h3>10 parcours inspirants</h3>
+          <p>Des histoires anonymisées pour se projeter et passer à l’action (contenu confidentiel).</p>
+        </div>
+        <div class="card">
+          <h3>10 challenges</h3>
+          <p>Des défis doux et concrets pour avancer chaque jour.</p>
+        </div>
+      </div>
+
+      <div class="order-area">
+        <div class="order-card">
+          <h3>Commander la Dreambox</h3>
+          <p class="price">Prix : <strong>13 €</strong></p>
+          <div class="quantity-control">
+            <button class="qty-btn" type="button" id="qtyMinus">−</button>
+            <input type="number" id="quantity" min="1" value="1" />
+            <button class="qty-btn" type="button" id="qtyPlus">+</button>
+          </div>
+          <button class="btn primary" id="addToCart">Ajouter au panier</button>
+        </div>
+        <div class="cart-card">
+          <h3>Panier</h3>
+          <p>Quantité : <span id="cartQty">0</span></p>
+          <p>Total : <span id="cartTotal">0 €</span></p>
+          <button class="btn secondary" id="clearCart">Vider le panier</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="formations" class="section formations">
+      <div class="section-header">
+        <h2>Formations développement personnel</h2>
+        <p>Des ateliers accessibles pour renforcer la confiance, gérer les émotions et passer à l’action.</p>
+      </div>
+      <div class="formations-grid">
+        <article class="card formation-card">
+          <h3>Confiance en soi</h3>
+          <p>Renforcer l’estime de soi et oser prendre sa place.</p>
+          <div class="meta">12/04 • 18h00 • Présentiel</div>
+          <button class="btn primary reserve" data-title="Confiance en soi">Réserver ce créneau</button>
+        </article>
+        <article class="card formation-card">
+          <h3>Gestion des émotions</h3>
+          <p>Comprendre, accueillir et canaliser ses émotions.</p>
+          <div class="meta">19/04 • 17h30 • En ligne</div>
+          <button class="btn primary reserve" data-title="Gestion des émotions">Réserver ce créneau</button>
+        </article>
+        <article class="card formation-card">
+          <h3>Passage à l’action</h3>
+          <p>Transformer une idée en plan concret et motivant.</p>
+          <div class="meta">26/04 • 16h00 • Présentiel</div>
+          <button class="btn primary reserve" data-title="Passage à l’action">Réserver ce créneau</button>
+        </article>
+      </div>
+      <div class="reservations">
+        <h3>Mes réservations</h3>
+        <ul id="reservationList" class="reservation-list">
+          <li class="empty">Aucune réservation pour le moment.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="apropos" class="section about">
+      <div class="section-header">
+        <h2>À propos / Nos valeurs</h2>
+        <p>
+          Dream Project accompagne les jeunes dans leur développement personnel tout en finançant des missions humanitaires à travers le monde.
+          Nous croyons en la confiance, en la bienveillance et en l’impact collectif pour agir localement et à l’international.
+        </p>
+      </div>
+      <div class="about-grid">
+        <div class="card">
+          <h3>Jeunesse</h3>
+          <p>Un accompagnement pensé pour les besoins et les rêves des jeunes.</p>
+        </div>
+        <div class="card">
+          <h3>Solidarité</h3>
+          <p>Chaque Dreambox contribue au financement de projets humanitaires.</p>
+        </div>
+        <div class="card">
+          <h3>Épanouissement</h3>
+          <p>Des outils simples pour gagner en confiance, jour après jour.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-header">
+        <h2>Contact</h2>
+        <p>Une question, un partenariat ou une idée ? Écris-nous.</p>
+      </div>
+      <form id="contactForm" class="contact-form">
+        <label for="name">Nom</label>
+        <input id="name" name="name" type="text" placeholder="Ton nom" required />
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="ton@email.com" required />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Ton message" required></textarea>
+        <button class="btn primary" type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© Dream Project — Développement personnel & missions humanitaires.</p>
+  </footer>
+
+  <section class="replacements">
+    <h3>Remplacer les images</h3>
+    <p>Chaque image utilise un placeholder <code>https://via.placeholder.com/...</code>. Pour changer :</p>
+    <ul>
+      <li>Avec une URL externe : remplace l’attribut <code>src</code> par ton lien (ex : <code>src="https://exemple.com/photo.jpg"</code>).</li>
+      <li>Avec un fichier local : ajoute l’image dans un dossier <code>images/</code> puis utilise <code>src="images/nom-du-fichier.ext"</code>.</li>
+    </ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
