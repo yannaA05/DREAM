@@ -26,6 +26,243 @@
           <p class="name">Rayanna</p>
           <p class="tagline">Étudiante en sciences de l’éducation • Communication • Créatif</p>
           <button class="primary" id="openBook">Ouvrir le carnet</button>
+  <link rel="stylesheet" href="styles.css?v=2" />
+</head>
+<body>
+  <button id="modeToggle" aria-label="Basculer mode">Mode nuit</button>
+  <div class="book-shell">
+    <div class="book" id="book">
+      <!-- Page 1 : Couverture -->
+      <section class="page cover" data-page="1">
+        <div class="cover-text">
+          <p class="subtitle">Carnet personnel</p>
+          <h1>Ça c’est moi</h1>
+          <p class="name">Rayanna</p>
+          <p class="tagline">Étudiante en sciences de l’éducation • Communication • Créatif</p>
+          <button class="primary" id="openBook">Ouvrir le carnet</button>
+        </div>
+        <div class="cover-decor">
+          <div class="sticker">🌸</div>
+          <div class="sticker">✨</div>
+          <div class="sticker">📓</div>
+        </div>
+      </section>
+
+      <!-- Page 2 : Qui je suis -->
+      <section class="page" data-page="2">
+        <div class="page-inner">
+          <h2>Qui je suis</h2>
+          <div class="blocks">
+            <article class="card hover-postit">
+              <h3>Étudiante en Sciences de l’éducation</h3>
+              <p>Objectif : devenir professeure des écoles maternelles et accompagner les premiers pas des enfants.</p>
+            </article>
+            <article class="card hover-postit">
+              <h3>Responsable communication Dream Project</h3>
+              <p>Stratégie, contenus et coordination pour valoriser nos actions solidaires et inspirer les jeunes.</p>
+            </article>
+            <article class="card hover-postit">
+              <h3>Créative</h3>
+              <p>Écriture, peinture et carnets visuels pour raconter des histoires et saisir les émotions.</p>
+            </article>
+          </div>
+          <p class="lead">Passionnée par l’éducation et l’impact social, je construis des ponts entre pédagogie, communication et créativité.</p>
+        </div>
+      </section>
+
+      <!-- Page 3 : Projets -->
+      <section class="page" data-page="3">
+        <div class="page-inner">
+          <h2>Projets</h2>
+          <div class="cards-grid">
+            <article class="project-card" data-title="Dream Project" data-desc="Communication, réseaux sociaux, stratégie éditoriale et création de carrousels inspirants pour la communauté." tabindex="0">
+              <h3>Dream Project</h3>
+              <p>Communication & réseaux</p>
+            </article>
+            <article class="project-card" data-title="Projets de licence" data-desc="Travaux universitaires, dossiers et exercices appliqués qui renforcent les bases pédagogiques et la rigueur." tabindex="0">
+              <h3>Projets de licence</h3>
+              <p>Cours, travaux & apprentissages</p>
+            </article>
+            <article class="project-card" data-title="Créatif" data-desc="Textes courts, peinture et carnets visuels pour explorer l’imaginaire et les émotions." tabindex="0">
+              <h3>Créatif</h3>
+              <p>Écriture & peinture</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Page 4 : Compétences -->
+      <section class="page" data-page="4">
+        <div class="page-inner">
+          <h2>Compétences</h2>
+          <div class="skills">
+            <div class="badge">Communication</div>
+            <div class="badge">Canva</div>
+            <div class="badge">Organisation</div>
+            <div class="badge">Travail d’équipe</div>
+            <div class="badge">Créativité</div>
+          </div>
+          <div class="skill-bars">
+            <div class="bar">
+              <span>Communication</span>
+              <div class="track"><div class="fill level-advanced"></div></div>
+            </div>
+            <div class="bar">
+              <span>Canva</span>
+              <div class="track"><div class="fill level-intermediate"></div></div>
+            </div>
+            <div class="bar">
+              <span>Organisation</span>
+              <div class="track"><div class="fill level-advanced"></div></div>
+            </div>
+            <div class="bar">
+              <span>Travail d’équipe</span>
+              <div class="track"><div class="fill level-intermediate"></div></div>
+            </div>
+            <div class="bar">
+              <span>Créativité</span>
+              <div class="track"><div class="fill level-advanced"></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Page 5 : Style / Créatif -->
+      <section class="page" data-page="5">
+        <div class="page-inner">
+          <h2>Style & Créatif</h2>
+          <div class="gallery">
+            <img src="https://via.placeholder.com/320x200" alt="Création visuelle 1" class="gallery-img" />
+            <img src="https://via.placeholder.com/320x200" alt="Création visuelle 2" class="gallery-img" />
+            <img src="https://via.placeholder.com/320x200" alt="Création visuelle 3" class="gallery-img" />
+          </div>
+          <div class="playlist">
+            <h3>Playlist / Inspirations</h3>
+            <ul>
+              <li>Vibes pastel et lo-fi pour écrire.</li>
+              <li>Podcasts pédagogie et créativité.</li>
+              <li>Albums visuels qui inspirent des palettes douces.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Page 6 : Feedback -->
+      <section class="page" data-page="6">
+        <div class="page-inner">
+          <h2>Feedback</h2>
+          <form id="feedbackForm" class="stacked">
+            <label for="feedbackName">Prénom</label>
+            <input type="text" id="feedbackName" name="feedbackName" placeholder="Ton prénom" required />
+            <label for="feedbackComment">Commentaire</label>
+            <textarea id="feedbackComment" name="feedbackComment" placeholder="Ton message" required></textarea>
+            <button type="submit" class="primary">Envoyer</button>
+          </form>
+          <div class="feedback-list" id="feedbackList"></div>
+        </div>
+      </section>
+
+      <!-- Page 7 : Contact -->
+      <section class="page" data-page="7">
+        <div class="page-inner">
+          <h2>Contact</h2>
+          <form id="contactForm" class="stacked">
+            <label for="contactName">Nom</label>
+            <input type="text" id="contactName" name="contactName" placeholder="Ton nom" required />
+            <label for="contactEmail">Email</label>
+            <input type="email" id="contactEmail" name="contactEmail" placeholder="ton@email.com" required />
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" name="contactMessage" placeholder="Écris-moi ici" required></textarea>
+            <button type="submit" class="primary">Envoyer</button>
+          </form>
+          <div class="socials">
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            <a href="#" aria-label="Email">Email</a>
+          </div>
+          <p class="closing">Merci d’avoir lu mon carnet</p>
+          <button class="secondary" id="backToCover">Retour à la couverture</button>
+        </div>
+      </section>
+    </div>
+    <div class="edge edge-left" aria-label="Page précédente"></div>
+    <div class="edge edge-right" aria-label="Page suivante"></div>
+  </div>
+
+  <div class="indicator">
+    <span id="pageIndicator">Page 1 / 7</span>
+    <div class="dots" id="dots"></div>
+  </div>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close" id="closeModal" aria-label="Fermer">×</button>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+
+  <div id="lightbox" class="modal" aria-hidden="true">
+    <div class="modal-content image-modal">
+      <button class="close" id="closeLightbox" aria-label="Fermer">×</button>
+      <img id="lightboxImg" src="" alt="Agrandissement" />
+    </div>
+  </div>
+
+  <div id="sparkles" class="sparkles" aria-hidden="true"></div>
+
+  <section class="replacements">
+    <h3>Remplacer les images</h3>
+    <p>Chaque image utilise un placeholder <code>https://via.placeholder.com/...</code>. Pour changer :</p>
+    <ul>
+      <li>Avec une URL externe : remplace l’attribut <code>src</code> par ton lien (ex : <code>src="https://exemple.com/photo.jpg"</code>).</li>
+      <li>Avec un fichier local : ajoute l’image dans un dossier <code>images/</code> puis utilise <code>src="images/nom-du-fichier.ext"</code>.</li>
+    </ul>
+  </section>
+
+  <script src="script.js?v=2"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream Project | Dreambox & Formations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo-block">
+      <div class="logo-placeholder">
+        <img src="logo1.png" alt="Logo Dream Project">
+      </div>
+      <div class="logo-text">
+        <span class="logo-title">Dream Project</span>
+        <p class="logo-subtitle">Développement personnel & missions humanitaires</p>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="#accueil">Accueil</a>
+      <a href="#qui-nous">Qui sommes-nous</a>
+      <a href="#dreambox">Dreambox</a>
+      <a href="#formations">Formations</a>
+      <a href="#valeurs">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="qui-nous" class="section intro">
+      <div class="section-header">
+        <p class="eyebrow">Qui sommes-nous ?</p>
+        <h2>Dream Project, par et pour les jeunes</h2>
+        <p class="section-desc">Créée au lycée par une équipe de jeunes, Dream Project accompagne les lycéens et étudiants dans leur développement personnel tout en finançant des missions humanitaires à l’international.</p>
+      </div>
+      <div class="intro-grid">
+        <div class="intro-card">
+          <h3 class="script">Pourquoi on existe</h3>
+          <p>Nous voulons aider les jeunes à se sentir légitimes, confiants et capables d’agir pour eux-mêmes et pour les autres.</p>
+        </div>
+        <div class="intro-card">
+          <h3 class="script">Ce que nous faisons</h3>
+          <p>Ateliers, interventions, accompagnement sur la confiance, les émotions et l’estime de soi… et surtout la Dreambox, un parcours de 30 jours.</p>
         </div>
         <div class="cover-decor">
           <div class="sticker">🌸</div>
